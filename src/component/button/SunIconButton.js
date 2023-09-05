@@ -4,7 +4,7 @@ const SunIconButton = () => {
 
     return (
         <div>
-            <button className=" block container absolute right-3 top-3  box-border h-7 w-8 px-2  leading-9 text-xl rounded ">
+            <button className=" block container absolute right-14 top-3 mr-8 box-border h-7 w-8 px-2  leading-9 text-xl rounded ">
             <svg 
       viewBox="0 0 16 16"
       fill="currentColor"

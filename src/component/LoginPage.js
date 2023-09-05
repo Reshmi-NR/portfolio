@@ -1,6 +1,5 @@
-import React, {Fragment} from "react";
+import IconSwitch from "../component/UI/IconSwitch"
 import Contents from "./content/Contents";
-import SunIconButtons from "./button/SunIconButton";
 import SideBar from "./UI/SideBar";
 import aboutme from "../img/aboutme.png";
 import achievements from "../img/achievements.png";
@@ -11,9 +10,11 @@ import language from "../img/language.png";
 import project from "../img/project.png";
 import skill from "../img/skill.png";
 import workexperience from "../img/workexperience.png";
+import Switcher from "../component/UI/IconSwitch";
 
 
 const LoginPage = (props) => {
+
 
     const menus = [
         {title: "ABOUT ME", src: aboutme},
@@ -28,16 +29,18 @@ const LoginPage = (props) => {
     ]
 
     return (
-        <div>
+        <div className="dark:bg-slate-900 light:bg-slate-200">
             <header className="sticky top-0 z-50">return(
                 <div>
                     <header
                         className="fixed top-0 left-0 w-full h-14 bg-dark-purple  items-center px-16 shadow-lg shadow-black">
                         <button onClick={props.onClick}
-                                className="bg-sky-500 w-14 h-19 border-gray-50 rounded-full hover:bg-sky-700   border-solid border-2 border-blue-200 text-gray-500 absolute top-3 right-12">
+                                className="bg-sky-500 w-14 h-19 border-gray-50 rounded-full hover:bg-sky-700   border-solid border-2 border-blue-200 text-gray-500 absolute top-3 right-1">
                             Home
                         </button>
-                        <SunIconButtons/>
+                        
+                        <IconSwitch className=" block container absolute right-10 top-3 mr-6  box-border h-7 w-8 px-2  leading-9 text-xl rounded " />
+                        
                         <SideBar menus={menus}/>
                     </header>
                 </div>

@@ -4,7 +4,7 @@ const MoonIconButton = () => {
 
     return (
         <div>
-            <button className="justify-center block container box-border h-10 w-15 p-6 border-2">
+            <button className=" block container absolute right-10 top-3 mr-6  box-border h-7 w-8 px-2  leading-9 text-xl rounded ">
             <svg
       viewBox="0 0 16 16"
       fill="currentColor"

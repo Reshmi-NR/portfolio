@@ -7,16 +7,16 @@ import {
     FaCode,
     FaLanguage,
     FaMedal,
-    FaCertificate,
     FaRegPaperPlane
 } from "react-icons/fa";
 import MyForm from "../UI/MyForm";
+import Language from "./Language";
 
 const Contents = () => {
 
     return (
         <div
-            className="flex flex-col justify-center  justify-items-start  content-center items-center m-4 font-sans antialiasing ">
+            className="flex flex-col justify-center  justify-items-start  content-center items-center m-4 font-sans antialiasing  bg-slate-900">
             <div className="flex-wrap  order-1 justify-self-center m-20 w-1/2 h-1/2">
                 <div
                     className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"ABOUT ME"}>
@@ -105,7 +105,8 @@ const Contents = () => {
                     </h1>
                 </div>
                 <div className="text-left text-slate-400 ml-4">
-                    <p>React,JavaScript,HTML5,CSS,Tailwind CSS</p>
+                    <Language/>
+                  
                 </div>
                 <div
                     className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"ACHIEVEMENTS"}>
