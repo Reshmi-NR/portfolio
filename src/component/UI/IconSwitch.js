@@ -18,8 +18,8 @@ export default function Switcher() {
             <DarkModeSwitch
                 style={{ marginBottom: "9rem",
                 position: "relative",
-                right: "15",
-                top: "9"
+                left: "300px",
+                top: "-20px", width:"35px"
                 }}
                 checked={darkSide}
                 onChange={toggleDarkMode}

@@ -1,27 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useRef} from "react";
 import emailjs from '@emailjs/browser';
 
 const MyForm = () => {
     const form = useRef()
-
+const [responseSuccess,setResponseSuccess] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
-
         emailjs.sendForm('service_j1hyrhk', 'template_bde6koh', form.current, 'GZUer3WlUfsFk6hmF')
         .then((result) => {
-            console.log(result.text);
+            if(result.status === 200){
+                setResponseSuccess(true);
+            }
         }, (error) => {
             console.log(error.text);
         });
-        e.target.reset()
+       // e.target.reset()
     };
     return (
-        <section className='bg-white py-10 lg:py-[50px] overflow-hidden relative z-10'>
+        <section className='bg-white dark:bg-slate-900 py-10 lg:py-[50px] overflow-hidden relative z-10'>
             <div className='container'>
                 <div className="flex flex-wrap lg:justify-between -mx-4">
                     <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
                         <div className="max-w-[570px] mb-12 lg:mb-0">
+                            {responseSuccess &&
+                                <p className="text-lg leading-loose text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600">Thank you for your message.I'll get back to you
+                                     as soon as possible.</p>}
+                            {!responseSuccess &&
                             <form ref={form} onSubmit={handleSubmit}>
                                 <div className='mb-6'>
                                     <input
@@ -114,6 +119,7 @@ const MyForm = () => {
                                     </button>
                                 </div>
                             </form>
+                            }
                             <div>
                             </div>
                         </div>

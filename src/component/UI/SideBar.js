@@ -19,7 +19,7 @@ const SideBar = (props) => {
     return (
         <div className="flex ">
             <div
-                className={`${open ? "w-72 " : "w-11"} duration-300 h-screen bg-dark-purple text-3xl absolute left-0 top-0`}>
+                className={`${open ? "w-72 " : "w-11"} duration-300 h-screen dark:bg-dark-purple text-3xl absolute left-0 top-0`}>
 
                 <button className={` cursor-pointer   border-dark-purple `} onClick={() => setOpen(!open)}>
                     <svg className={`${!open ? "absolute top-3 left-2" : "absolute top-3 left-60"}`}
@@ -55,7 +55,7 @@ const SideBar = (props) => {
             </div>
 
             <div
-                className={`px-7 text-2xl font-semibold text-gray-500 ${!open ? "absolute top-2 left-6" : "absolute top-2 left-1/4"}`}>
+                className={`px-7 text-2xl font-semibold text-black dark:text-white ${!open ? "absolute top-2 left-6" : "absolute top-2 left-1/4"}`}>
                 <h1>
                     Reshmi Radhakrishnan
                 </h1>
