@@ -9,7 +9,6 @@ const [responseSuccess,setResponseSuccess] = useState(false);
         e.preventDefault();
         emailjs.sendForm('service_j1hyrhk', 'template_bde6koh', form.current, 'GZUer3WlUfsFk6hmF')
         .then((result) => {
-            setResponseSuccess(result.status);
             if(result.status === 200){
                 setResponseSuccess(true);
             }

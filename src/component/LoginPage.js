@@ -29,14 +29,14 @@ const LoginPage = (props) => {
     ]
 
     return (
-        <div className="dark:bg-slate-900 light:bg-slate-200">
+        <div className="dark:bg-slate-900 light:bg-amber-950">
             <header className="sticky top-0 z-50">
                 <div>
                     <header
-                        className="fixed top-0 left-0 w-full h-14 dark:bg-dark-purple  items-center px-16 shadow-lg shadow-black">
+                        className="fixed top-0 left-0 w-full h-14 dark:bg-dark-purple items-center px-16 bg-blue-400 shadow-lg ">
                        <fragment>
                            <button onClick={props.onClick}
-                                   className="bg-sky-500 w-14 h-19 border-gray-50 rounded-full hover:bg-sky-700   border-solid border-2 border-blue-200 text-gray-500 absolute top-3 right-1">
+                                   className="bg-amber-300 dark:bg-white w-14 h-19 border-gray-50 rounded-full hover:bg-sky-700   border-solid border-2 border-blue-200 text-gray-500 light:text-black absolute top-3 right-1">
                             Home
                         </button>
 
