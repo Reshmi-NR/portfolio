@@ -16,10 +16,10 @@ const Contents = () => {
 
     return (
         <div
-            className="flex flex-col justify-center  justify-items-start  content-center items-center m-4 font-sans antialiasing  bg-slate-900">
+            className="flex flex-col justify-center  justify-items-start  content-center items-center m-4 font-sans antialiasing  dark:bg-slate-900">
             <div className="flex-wrap  order-1 justify-self-center m-20 w-1/2 h-1/2">
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"ABOUT ME"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"ABOUT ME"}>
                     <span> <FaUser/></span>
                     <h1>
                         &nbsp;ABOUT ME
@@ -42,7 +42,7 @@ const Contents = () => {
                     also have experience with Jenkins deployment, Ansible, Bitbucket, and Git.
                 </p>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"WORK EXPERIENCE"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"WORK EXPERIENCE"}>
                     <span><FaSuitcase/></span>
                     <h1>
                         &nbsp;Work Experience
@@ -53,7 +53,7 @@ const Contents = () => {
                 </div>
 
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"EDUCATION"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"EDUCATION"}>
                     <span><FaGraduationCap/></span>
                     <h1>
                         &nbsp;Education
@@ -76,7 +76,7 @@ const Contents = () => {
                     </ul>
                 </div>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"SKILLS"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"SKILLS"}>
                     <span><FaTools/></span>
                     <h1>
                         &nbsp;Skills
@@ -88,7 +88,7 @@ const Contents = () => {
                         adiqua minim veniam quis nostrud exercitation ullamco</p>
                 </div>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"PROJECTS"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"PROJECTS"}>
                     <span><FaCode/></span>
                     <h1>&nbsp;Project</h1>
                 </div>
@@ -98,7 +98,7 @@ const Contents = () => {
                         adiqua minim veniam quis nostrud exercitation ullamco</p>
                 </div>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"LANGUAGES"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"LANGUAGES"}>
                     <span><FaLanguage/></span>
                     <h1>
                         &nbsp;Languages
@@ -109,7 +109,7 @@ const Contents = () => {
                   
                 </div>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"ACHIEVEMENTS"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"ACHIEVEMENTS"}>
                     <span><FaMedal/></span>
                     <h1>
                         &nbsp;Achievements
@@ -121,7 +121,7 @@ const Contents = () => {
                         adiqua minim veniam quis nostrud exercitation ullamco</p>
                 </div>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"CERTIFICATIONS"}>
+                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"CERTIFICATIONS"}>
                     <span><FaMedal/></span>
                     <h1>
                         &nbsp;Certifications
@@ -135,7 +135,7 @@ const Contents = () => {
                 <div className="order-9">
                     <div>
                         <div
-                            className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 underline relative right-5" id={"CONTACT"}>
+                            className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"CONTACT"}>
                             <span><FaRegPaperPlane/></span>
                             <h1>
                                 &nbsp;Contact
