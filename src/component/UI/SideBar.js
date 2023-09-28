@@ -4,6 +4,7 @@ import React, {useState} from "react";
 const SideBar = (props) => {
     const [open, setOpen] = useState(false);
 
+   
 
     function handleClickAction(title) {
         let element = document.getElementById(title);
@@ -14,12 +15,13 @@ const SideBar = (props) => {
         if(scrolledY){
             window.scroll(0, scrolledY - fixedHeaderHeight);
         }
+
     }
 
     return (
         <div className="flex ">
             <div
-                className={`${open ? "w-72 " : "w-11"} duration-300 h-screen dark:bg-dark-purple text-3xl absolute left-0 top-0`}>
+                className={`${open ? "w-72 " : "w-11"} duration-300 h-screen  bg-blue-400 shadow-lg  dark:bg-dark-purple text-3xl absolute left-0 top-0`}>
 
                 <button className={` cursor-pointer   border-dark-purple `} onClick={() => setOpen(!open)}>
                     <svg className={`${!open ? "absolute top-3 left-2" : "absolute top-3 left-60"}`}
@@ -42,7 +44,7 @@ const SideBar = (props) => {
                     <ul className="pt-6 divide-y divide-blue-200 divide-solid">
                         {props.menus.map((menus, index) => (
                             <li key={index}
-                                className={`text-gray-500 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md ${menus.gap ? "mt-9" : "mt-2"}`}
+                                className={` text-black  dark:text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md ${menus.gap ? "mt-9" : "mt-2"}`}
                                 onClick={() => handleClickAction(menus.title)}>
                                 <img src={menus.src}/>
                                 <span

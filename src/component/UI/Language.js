@@ -18,16 +18,11 @@ const languagesList= [
     },
     {
         id: 3,
-        language: "Tamil",
-        text: "எனக்கு தமிழ் புரியும், பேசவும் தெரியும்.",
-        translation: "I can understand and speak tamil.",
-    },
-    {
-        id: 4,
         language: "Hindi",
-        text: "எனக்கு தமிழ் புரியும், பேசவும் தெரியும்.",
+        text: "मैं हिंदी समझ और बोल सकता हूं",
         translation: "I can understand and speak hindi.",
-    }
+    },
+   
 ];
  const Language = ()  => {
 

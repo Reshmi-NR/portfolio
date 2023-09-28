@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 const MyForm = () => {
     const form = useRef()
-const [responseSuccess,setResponseSuccess] = useState(false);
+const [responseSuccess, setResponseSuccess] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_j1hyrhk', 'template_bde6koh', form.current, 'GZUer3WlUfsFk6hmF')

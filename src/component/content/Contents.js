@@ -7,16 +7,23 @@ import {
     FaCode,
     FaLanguage,
     FaMedal,
-    FaRegPaperPlane
+    FaRegPaperPlane,
+
 } from "react-icons/fa";
 import MyForm from "../UI/MyForm";
-import Language from "./Language";
+import Language from "../UI/Language";
+import reshmi2 from "../../img/reshmi2.jpg"
+import Skills from "../UI/Skill";
+import Education from "../UI/Education";
+import WorkExperience from "../UI/WorkExperience";
+import Certifications from "../UI/Certifications";
 
 const Contents = () => {
 
     return (
         <div
-            className="flex flex-col justify-center  justify-items-start  content-center items-center m-4 font-sans antialiasing  dark:bg-slate-900">
+            className="flex flex-col gap-10 justify-center  justify-items-start  content-center items-center m-4 font-sans antialiasing  dark:bg-slate-900">
+                
             <div className="flex-wrap  order-1 justify-self-center m-20 w-1/2 h-1/2">
                 <div
                     className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"ABOUT ME"}>
@@ -26,7 +33,9 @@ const Contents = () => {
                     </h1>
                 </div>
 
-                <p className="place-self-start font-normal leading-loose text-left text-slate-400  whitespace-pre-line">
+                <div>
+                <img src={reshmi2} className=" w-80 h-80 object-right-top rounded-full  outline-offset-8 outline-8 dark:outline-blue-200 outline-blue-300 outline contrast-125 hue-rotate-15 drop-shadow-2xl shadow-2xl  bg-cyan-500 shadow-cyan-500/50 float-right"/>
+                <p className="place-self-start clear-left font-normal leading-loose text-left text-black dark:text-slate-400 whitespace-pre-line">
                     Hi there,
 
                     my name is Reshmi Radhakrishnan and I'm a React JS front-end developer with 4 months of
@@ -41,6 +50,7 @@ const Contents = () => {
                     the front-end of a new web bet gaming site.In addition to my front-end development skills, I
                     also have experience with Jenkins deployment, Ansible, Bitbucket, and Git.
                 </p>
+                </div>
                 <div
                     className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"WORK EXPERIENCE"}>
                     <span><FaSuitcase/></span>
@@ -48,8 +58,8 @@ const Contents = () => {
                         &nbsp;Work Experience
                     </h1>
                 </div>
-                <div className="text-left text-slate-400">
-                    <p>Front End web developer in Inspired Entertainment for 6 months</p>
+                <div className="text-left text-black dark:text-slate-400">
+                   <WorkExperience/>
                 </div>
 
                 <div
@@ -59,40 +69,29 @@ const Contents = () => {
                         &nbsp;Education
                     </h1>
                 </div>
-                <div className="text-left text-slate-400 m-4">
-                    <ul className="list-outside list-disc text-slate-400">
-                        <li>
-                            Nirmala H.S.S S Aluva
-                            10th-80%
-                        </li>
-                        <li>
-                            Gov.H.S.S.Kalamassery
-                            pluse2-80%
-                        </li>
-                        <li>
-                            MET's School of Engineering
-                            Electrical and Electronics Engineering-7.45CGPA
-                        </li>
+                <div className="text-left text-black dark:text-slate-400 m-4">
+                    <ul className="list-outside list-disc">
+                        <div>
+                            <Education/>
+                        </div>
                     </ul>
                 </div>
                 <div
-                    className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"SKILLS"}>
+                    className="flex items-baseline text-3xl m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"SKILLS"}>
                     <span><FaTools/></span>
                     <h1>
                         &nbsp;Skills
                     </h1>
                 </div>
-                <div className="text-left text-slate-400">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        adiqua minim veniam quis nostrud exercitation ullamco</p>
+                <div className="text-left  text-black dark:text-slate-400">
+                 <Skills/>
                 </div>
                 <div
                     className="flex items-baseline text-lg m-4 font-medium text-left text-sky-400 dark:text-emerald-600 underline relative right-5" id={"PROJECTS"}>
                     <span><FaCode/></span>
                     <h1>&nbsp;Project</h1>
                 </div>
-                <div className="text-left text-slate-400">
+                <div className="text-left text-black dark:text-slate-400">
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
                         adiqua minim veniam quis nostrud exercitation ullamco</p>
@@ -104,7 +103,7 @@ const Contents = () => {
                         &nbsp;Languages
                     </h1>
                 </div>
-                <div className="text-left text-slate-400 ml-4">
+                <div className="text-left text-black dark:text-slate-400 ml-4">
                     <Language/>
                   
                 </div>
@@ -115,7 +114,7 @@ const Contents = () => {
                         &nbsp;Achievements
                     </h1>
                 </div>
-                <div className="text-left text-slate-400">
+                <div className="text-left text-black dark:text-slate-400">
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
                         adiqua minim veniam quis nostrud exercitation ullamco</p>
@@ -127,10 +126,8 @@ const Contents = () => {
                         &nbsp;Certifications
                     </h1>
                 </div>
-                <div className="text-left text-slate-400">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        adiqua minim veniam quis nostrud exercitation ullamco</p>
+                <div className="text-left text-black dark:text-slate-400">
+                    <Certifications/>
                 </div>
                 <div className="order-9">
                     <div>
