@@ -33,9 +33,10 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route  path='*' element={<Error/>}/>
-        <Route path='/reshmi' element={<HomePage/>}/>
+
+        <Route path='/' element={<HomePage/>}/>
         <Route path='/profile' element={<LoginPage/>}/>
+        <Route  path='*' element={<Error/>}/>
       </Routes>
     </div>
   )
